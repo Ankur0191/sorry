@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Utkrshini! 💖</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe4e1;
+        }
+        h1 {
+            color: #ff1493;
+            margin-top: 50px;
+            font-size: 2.5rem;
+        }
+        .message {
+            font-size: 1.5rem;
+            margin: 20px auto;
+            width: 60%;
+        }
+        .gif {
+            width: 200px;
+            margin: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .yes {
+            background-color: #ff69b4;
+            color: white;
+        }
+        .no {
+            background-color: #ff4500;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey Utkrshini! I'm Super Sorry! 😣</h1>
+    <p class="message">I messed up, and I know it! But please forgive me? 🥺</p>
+    <img class="gif" src="https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif" alt="cute sorry gif">
+    <div class="buttons">
+        <button class="btn yes" onclick="forgiveMe()">Yes, I forgive you! 💕</button>
+        <button class="btn no" id="noButton" onmouseover="moveButton()">No 😈</button>
+    </div>
+
+    <script>
+        function forgiveMe() {
+            alert("Yay! You're the best, Utkrshini! 💖💖💖");
+        }
+
+        function moveButton() {
+            let button = document.getElementById("noButton");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 100);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
